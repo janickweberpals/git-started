@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STUDY TITLE",
+    "section": "",
+    "text": "This is a GitLab/quarto-based template for real-world evidence (RWE) studies based on the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol.\n\n\n\nWelcome to the quarto HARPER template!\nYou can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the README.md file of this repository.\nFor more information about the HARPER protocol, please visit: https://osf.io/6qxpf/"
+  },
+  {
+    "objectID": "protocol/protocol.html#title",
+    "href": "protocol/protocol.html#title",
+    "title": "Study protocol",
+    "section": "Title",
+    "text": "Title"
+  },
+  {
+    "objectID": "protocol/protocol.html#research-question-and-objectives",
+    "href": "protocol/protocol.html#research-question-and-objectives",
+    "title": "Study protocol",
+    "section": "Research question and objectives",
+    "text": "Research question and objectives"
+  },
+  {
+    "objectID": "protocol/protocol.html#protocol-version",
+    "href": "protocol/protocol.html#protocol-version",
+    "title": "Study protocol",
+    "section": "Protocol version",
+    "text": "Protocol version"
+  },
+  {
+    "objectID": "protocol/protocol.html#contributors",
+    "href": "protocol/protocol.html#contributors",
+    "title": "Study protocol",
+    "section": "Contributors",
+    "text": "Contributors\n\nPrimary investigator contact information: \nContributor names:"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-registration",
+    "href": "protocol/protocol.html#study-registration",
+    "title": "Study protocol",
+    "section": "Study registration",
+    "text": "Study registration\nSite: \nIdentifier:"
+  },
+  {
+    "objectID": "protocol/protocol.html#sponsor",
+    "href": "protocol/protocol.html#sponsor",
+    "title": "Study protocol",
+    "section": "Sponsor",
+    "text": "Sponsor\nOrganization: \nContact:"
+  },
+  {
+    "objectID": "protocol/protocol.html#conflict-of-interest",
+    "href": "protocol/protocol.html#conflict-of-interest",
+    "title": "Study protocol",
+    "section": "Conflict of interest",
+    "text": "Conflict of interest"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-design",
+    "href": "protocol/protocol.html#study-design",
+    "title": "Study protocol",
+    "section": "7.1 Study design",
+    "text": "7.1 Study design\nResearch design (e.g. cohort, case-control, etc.): \nRationale for study design choice:"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-design-diagram",
+    "href": "protocol/protocol.html#study-design-diagram",
+    "title": "Study protocol",
+    "section": "7.2 Study design diagram",
+    "text": "7.2 Study design diagram"
+  },
+  {
+    "objectID": "protocol/protocol.html#setting",
+    "href": "protocol/protocol.html#setting",
+    "title": "Study protocol",
+    "section": "7.3 Setting",
+    "text": "7.3 Setting\n\n7.3.1 Context and rationale for definition of time 0 (and other primary time anchors) for entry to the study population\n\n\n\n\n\n\n\n\nTable 3:  Operational Definition of Time 0 (index date) and other primary time anchors. \n  \n    \n    \n      Study population name(s)\n      Time Anchor Description (e.g. time 0)\n      Number of entries\n      Type of entry\n      Washout window\n      Care setting\n      Code type\n      Diagnosis position\n      Incident with respect to…\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n  \n  \n  \n\n\n\n\n\n\n\n7.3.2 Context and rationale for study inclusion criteria\n\n\n\n\n\n\n\n\n\n\nTable 4:  Operational Definitions of Inclusion Criteria \n  \n    \n    \n      Criterion\n      Details\n      Order of application\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n  \n  \n  \n\n\n\n\n\n\n\n7.3.3 Context and rationale for study exclusion criteria\n\n\n\n\n\n\n\n\nTable 5:  Operational Definitions of Exclusion Criteria \n  \n    \n    \n      Criterion\n      Details\n      Order of application\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>"
+  },
+  {
+    "objectID": "protocol/protocol.html#variables",
+    "href": "protocol/protocol.html#variables",
+    "title": "Study protocol",
+    "section": "7.4 Variables",
+    "text": "7.4 Variables\n\n\n7.4.1 Context and rationale for exposure(s) of interest\n\n\nAlgorithm to define duration of exposure effect: \n\n\n\n\n\n\n\n\n\nTable 6:  Operational Definitions of Exposure \n  \n    \n    \n      Exposure group name(s)\n      Details\n      Washout window\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Incident with respect to...\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n  \n  \n  \n\n\n\n\n\n\n\n7.4.2 Context and rationale for outcome(s) of interest\n\n\n\n\n\n\n\n\n\n\nTable 7:  Operational Definitions of Outcome \n  \n    \n    \n      Outcome name\n      Details\n      Primary outcome?\n      Type of outcome\n      Washout window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n  \n  \n  \n\n\n\n\n\n\n\n7.4.3 Context and rationale for follow up\n\n \n\n\n\n\n\n\nTable 8:  Operational Definitions of Follow up \n  \n    \n    \n      Time point\n      Select all that apply\n      Specify\n    \n  \n  \n    Follow up start\n<Text>\n<Text>\n    Follow up end\n<Text>\n<Text>\n    Date of outcome\n<Text>\n<Text>\n    Date of death\n<Text>\n<Text>\n    End of observation in data\n<Text>\n<Text>\n    Day X following index date\n<Text>\n<Text>\n    End of study period\n<Text>\n<Text>\n    End of exposure\n<Text>\n<Text>\n    Date of add to/switch from exposure\n<Text>\n<Text>\n    Other date\n<Text>\n<Text>\n  \n  \n  \n\n\n\n\n\n\n\n7.4.4 Context and rationale for covariates (confounding variables and effect modifiers, e.g. risk factors, comorbidities, comedications)\n\n\n\n\n\n\n\n\n\n\nTable 9:  Operational Definitions of Covariates \n  \n    \n    \n      Characteristic\n      Details\n      Type of variable\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>\n<Text>"
+  },
+  {
+    "objectID": "protocol/protocol.html#data-analysis",
+    "href": "protocol/protocol.html#data-analysis",
+    "title": "Study protocol",
+    "section": "7.5 Data analysis",
+    "text": "7.5 Data analysis\n\n7.5.1 Context and rationale for analysis plan\n\n\n\n\n\n7.5.1.1 A. Primary analysis\n\n\nTable 10: Primary, secondary, and subgroup analysis specification\n\n\n\n\n\n\n(a) Primary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n<Text>\n    Exposure contrast:\n<Text>\n    Outcome:\n<Text>\n    Analytical software\n<Text>\n    Model(s):\n<Text>\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n(b) Secondary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n<Text>\n    Exposure contrast:\n<Text>\n    Outcome:\n<Text>\n    Analytical software\n<Text>\n    Model(s):\n<Text>\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nTable 11:  Sensitivity analyses – rationale, strengths and limitations \n  \n    \n    \n      Analysis\n      What is being varied?\n      Why (expected learning)?\n      Strengths of the sensitivity analysis compared to primary\n      Limitations of the sensitivity analysis compared to primary\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>"
+  },
+  {
+    "objectID": "protocol/protocol.html#data-sources",
+    "href": "protocol/protocol.html#data-sources",
+    "title": "Study protocol",
+    "section": "7.6 Data sources",
+    "text": "7.6 Data sources\n\n\n7.6.1 Context and rationale for data sources\nReason for selection: \nStrengths of data source(s): \nLimitations of data source(s): \nData source provenance/curation: \n\n\n\n\n\n\n\n\nTable 12:  Metadata about data sources and software \n  \n    \n    \n      Data element\n      Data 1\n      Data 2\n      Data 3\n    \n  \n  \n    Data Sources:\n<Text>\n<Text>\n<Text>\n    Study Period:\n<Text>\n<Text>\n<Text>\n    Eligibile Cohort Entry Period:\n<Text>\n<Text>\n<Text>\n    Data version (or date of last update):\n<Text>\n<Text>\n<Text>\n    Data sampling/extraction criteria:\n<Text>\n<Text>\n<Text>\n    Type(s) of data:\n<Text>\n<Text>\n<Text>\n    Data linkage\n<Text>\n<Text>\n<Text>\n    Conversion to CDM:\n<Text>\n<Text>\n<Text>\n    Software for data management:\n<Text>\n<Text>\n<Text>"
+  },
+  {
+    "objectID": "protocol/protocol.html#data-management",
+    "href": "protocol/protocol.html#data-management",
+    "title": "Study protocol",
+    "section": "7.7 Data management",
+    "text": "7.7 Data management"
+  },
+  {
+    "objectID": "protocol/protocol.html#quality-control",
+    "href": "protocol/protocol.html#quality-control",
+    "title": "Study protocol",
+    "section": "7.8 Quality control",
+    "text": "7.8 Quality control"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-size-and-feasibility",
+    "href": "protocol/protocol.html#study-size-and-feasibility",
+    "title": "Study protocol",
+    "section": "7.9 Study size and feasibility",
+    "text": "7.9 Study size and feasibility"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-design-diagramschneeweiss2019lund2021",
+    "href": "protocol/protocol.html#study-design-diagramschneeweiss2019lund2021",
+    "title": "Study protocol",
+    "section": "7.2 Study design diagram3,4",
+    "text": "7.2 Study design diagram3,4"
+  },
+  {
+    "objectID": "protocol/protocol.html#loaded-packages",
+    "href": "protocol/protocol.html#loaded-packages",
+    "title": "Study protocol",
+    "section": "13.1 Loaded packages",
+    "text": "13.1 Loaded packages\n\n\n\n\n\n\n\n\n\n\n \npackage\nloadedversion\n\n\n\n\ndplyr\ndplyr\n1.1.1\n\n\nforcats\nforcats\n1.0.0\n\n\nggplot2\nggplot2\n3.4.2\n\n\ngt\ngt\n0.9.0\n\n\nhere\nhere\n1.0.1\n\n\nlubridate\nlubridate\n1.9.2\n\n\npurrr\npurrr\n1.0.1\n\n\nreadr\nreadr\n2.1.4\n\n\nstringr\nstringr\n1.5.0\n\n\ntibble\ntibble\n3.2.1\n\n\ntidyr\ntidyr\n1.3.0\n\n\ntidyverse\ntidyverse\n2.0.0"
+  },
+  {
+    "objectID": "protocol/protocol.html#session-info-1",
+    "href": "protocol/protocol.html#session-info-1",
+    "title": "Study protocol",
+    "section": "13.2 Session info",
+    "text": "13.2 Session info\n\n\nR version 4.2.1 (2022-06-23)\nPlatform: x86_64-apple-darwin17.0 (64-bit)\nlocale: en_US.UTF-8||en_US.UTF-8||en_US.UTF-8||C||en_US.UTF-8||en_US.UTF-8\nattached base packages: stats, graphics, grDevices, datasets, utils, methods and base\nother attached packages: gt(v.0.9.0), here(v.1.0.1), lubridate(v.1.9.2), forcats(v.1.0.0), stringr(v.1.5.0), dplyr(v.1.1.1), purrr(v.1.0.1), readr(v.2.1.4), tidyr(v.1.3.0), tibble(v.3.2.1), ggplot2(v.3.4.2) and tidyverse(v.2.0.0)\nloaded via a namespace (and not attached): tidyselect(v.1.2.0), xfun(v.0.38), pander(v.0.6.5), colorspace(v.2.1-0), vctrs(v.0.6.0), generics(v.0.1.3), htmltools(v.0.5.4), yaml(v.2.3.7), utf8(v.1.2.3), rlang(v.1.1.0), pillar(v.1.9.0), glue(v.1.6.2), withr(v.2.5.0), bit64(v.4.0.5), sessioninfo(v.1.2.2), lifecycle(v.1.0.3), munsell(v.0.5.0), gtable(v.0.3.3), htmlwidgets(v.1.6.2), evaluate(v.0.20), knitr(v.1.42), tzdb(v.0.3.0), fastmap(v.1.1.1), parallel(v.4.2.1), fansi(v.1.0.4), Rcpp(v.1.0.10), renv(v.0.16.0), scales(v.1.2.1), vroom(v.1.6.1), jsonlite(v.1.8.4), bit(v.4.0.5), hms(v.1.1.3), digest(v.0.6.31), stringi(v.1.7.12), grid(v.4.2.1), rprojroot(v.2.0.3), cli(v.3.6.0), tools(v.4.2.1), magrittr(v.2.0.3), sass(v.0.4.5), crayon(v.1.5.2), pkgconfig(v.2.0.3), xml2(v.1.3.3), timechange(v.0.2.0), rmarkdown(v.2.20), rstudioapi(v.0.14), R6(v.2.5.1) and compiler(v.4.2.1)"
+  },
+  {
+    "objectID": "protocol/protocol.html#repositories",
+    "href": "protocol/protocol.html#repositories",
+    "title": "Study protocol",
+    "section": "13.3 Repositories",
+    "text": "13.3 Repositories\n\n\n\nrepos:\n\n\n\n\n\n\nCRAN\n\n\n\n\nhttps://cran.rstudio.com"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#title",
+    "href": "protocol/Quarto template/protocol.html#title",
+    "title": "Study protocol",
+    "section": "Title",
+    "text": "Title"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#research-question-and-objectives",
+    "href": "protocol/Quarto template/protocol.html#research-question-and-objectives",
+    "title": "Study protocol",
+    "section": "Research question and objectives",
+    "text": "Research question and objectives"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#protocol-version",
+    "href": "protocol/Quarto template/protocol.html#protocol-version",
+    "title": "Study protocol",
+    "section": "Protocol version",
+    "text": "Protocol version"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#contributors",
+    "href": "protocol/Quarto template/protocol.html#contributors",
+    "title": "Study protocol",
+    "section": "Contributors",
+    "text": "Contributors\n\nPrimary investigator contact information: \nContributor names:"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#study-registration",
+    "href": "protocol/Quarto template/protocol.html#study-registration",
+    "title": "Study protocol",
+    "section": "Study registration",
+    "text": "Study registration\nSite: \nIdentifier:"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#sponsor",
+    "href": "protocol/Quarto template/protocol.html#sponsor",
+    "title": "Study protocol",
+    "section": "Sponsor",
+    "text": "Sponsor\nOrganization: \nContact:"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#conflict-of-interest",
+    "href": "protocol/Quarto template/protocol.html#conflict-of-interest",
+    "title": "Study protocol",
+    "section": "Conflict of interest",
+    "text": "Conflict of interest"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#title",
+    "href": "protocol/Quarto_template/protocol.html#title",
+    "title": "Study protocol",
+    "section": "Title",
+    "text": "Title"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#research-question-and-objectives",
+    "href": "protocol/Quarto_template/protocol.html#research-question-and-objectives",
+    "title": "Study protocol",
+    "section": "Research question and objectives",
+    "text": "Research question and objectives"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#protocol-version",
+    "href": "protocol/Quarto_template/protocol.html#protocol-version",
+    "title": "Study protocol",
+    "section": "Protocol version",
+    "text": "Protocol version"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#contributors",
+    "href": "protocol/Quarto_template/protocol.html#contributors",
+    "title": "Study protocol",
+    "section": "Contributors",
+    "text": "Contributors\n\nPrimary investigator contact information: \nContributor names:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#study-registration",
+    "href": "protocol/Quarto_template/protocol.html#study-registration",
+    "title": "Study protocol",
+    "section": "Study registration",
+    "text": "Study registration\nSite: \nIdentifier:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#sponsor",
+    "href": "protocol/Quarto_template/protocol.html#sponsor",
+    "title": "Study protocol",
+    "section": "Sponsor",
+    "text": "Sponsor\nOrganization: \nContact:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#conflict-of-interest",
+    "href": "protocol/Quarto_template/protocol.html#conflict-of-interest",
+    "title": "Study protocol",
+    "section": "Conflict of interest",
+    "text": "Conflict of interest"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "STUDY TITLE",
+    "section": "",
+    "text": "Welcome to the quarto HARPER template!\nYou can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the README.md file of this repository.\nFor more information about the HARPER protocol, please visit: https://osf.io/6qxpf/"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#study-design",
+    "href": "protocol/Quarto_template/protocol.html#study-design",
+    "title": "Study protocol",
+    "section": "7.1 Study design",
+    "text": "7.1 Study design\nResearch design (e.g. cohort, case-control, etc.): \nRationale for study design choice:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#study-design-diagramschneeweiss2019lund2021",
+    "href": "protocol/Quarto_template/protocol.html#study-design-diagramschneeweiss2019lund2021",
+    "title": "Study protocol",
+    "section": "7.2 Study design diagram3,4",
+    "text": "7.2 Study design diagram3,4"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#setting",
+    "href": "protocol/Quarto_template/protocol.html#setting",
+    "title": "Study protocol",
+    "section": "7.3 Setting",
+    "text": "7.3 Setting\n\n7.3.1 Context and rationale for definition of time 0 (and other primary time anchors) for entry to the study population\n\n\n\n\n\n\n\n\nTable 3:  Operational Definition of Time 0 (index date) and other primary time\nanchors. \n  \n    \n    \n      Study population name(s)\n      Time Anchor Description (e.g. time 0)\n      Number of entries\n      Type of entry\n      Washout window\n      Care setting\n      Code type\n      Diagnosis position\n      Incident with respect to…\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n  \n  \n  \n\n\n\n\n\n\n\n7.3.2 Context and rationale for study inclusion criteria\n\n\n\n\n\n\n\n\n\n\nTable 4:  Operational Definitions of Inclusion Criteria \n  \n    \n    \n      Criterion\n      Details\n      Order of application\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n  \n  \n  \n\n\n\n\n\n\n\n7.3.3 Context and rationale for study exclusion criteria\n\n\n\n\n\n\n\n\nTable 5:  Operational Definitions of Exclusion Criteria \n  \n    \n    \n      Criterion\n      Details\n      Order of application\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#variables",
+    "href": "protocol/Quarto_template/protocol.html#variables",
+    "title": "Study protocol",
+    "section": "7.4 Variables",
+    "text": "7.4 Variables\n\n\n7.4.1 Context and rationale for exposure(s) of interest\n\n\nAlgorithm to define duration of exposure effect: \n\n\n\n\n\n\n\n\n\nTable 6:  Operational Definitions of Exposure \n  \n    \n    \n      Exposure group name(s)\n      Details\n      Washout window\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Incident with respect to...\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n  \n  \n  \n\n\n\n\n\n\n\n7.4.2 Context and rationale for outcome(s) of interest\n\n\n\n\n\n\n\n\n\n\nTable 7:  Operational Definitions of Outcome \n  \n    \n    \n      Outcome name\n      Details\n      Primary outcome?\n      Type of outcome\n      Washout window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n  \n  \n  \n\n\n\n\n\n\n\n7.4.3 Context and rationale for follow up\n\n \n\n\n\n\n\n\nTable 8:  Operational Definitions of Follow up \n  \n    \n    \n      Time point\n      Select all that apply\n      Specify\n    \n  \n  \n    Follow up start\n&lt;Text&gt;\n&lt;Text&gt;\n    Follow up end\n&lt;Text&gt;\n&lt;Text&gt;\n    Date of outcome\n&lt;Text&gt;\n&lt;Text&gt;\n    Date of death\n&lt;Text&gt;\n&lt;Text&gt;\n    End of observation in data\n&lt;Text&gt;\n&lt;Text&gt;\n    Day X following index date\n&lt;Text&gt;\n&lt;Text&gt;\n    End of study period\n&lt;Text&gt;\n&lt;Text&gt;\n    End of exposure\n&lt;Text&gt;\n&lt;Text&gt;\n    Date of add to/switch from exposure\n&lt;Text&gt;\n&lt;Text&gt;\n    Other date\n&lt;Text&gt;\n&lt;Text&gt;\n  \n  \n  \n\n\n\n\n\n\n\n7.4.4 Context and rationale for covariates (confounding variables and effect modifiers, e.g. risk factors, comorbidities, comedications)\n\n\n\n\n\n\n\n\n\n\nTable 9:  Operational Definitions of Covariates \n  \n    \n    \n      Characteristic\n      Details\n      Type of variable\n      Assessment window\n      Care settings\n      Code Type\n      Diagnosis position\n      Applied to study populations:\n      Measurement characteristics/ validation\n      Source of algorithm\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#data-analysis",
+    "href": "protocol/Quarto_template/protocol.html#data-analysis",
+    "title": "Study protocol",
+    "section": "7.5 Data analysis",
+    "text": "7.5 Data analysis\n\n7.5.1 Context and rationale for analysis plan\n\n\n\n\n\n7.5.1.1 A. Primary analysis\n\n\nTable 10: Primary, secondary, and subgroup analysis specification\n\n\n\n\n\n\n(a) A. Primary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n&lt;Text&gt;\n    Exposure contrast:\n&lt;Text&gt;\n    Outcome:\n&lt;Text&gt;\n    Analytical software\n&lt;Text&gt;\n    Model(s):\n&lt;Text&gt;\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n(b) B. Secondary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n&lt;Text&gt;\n    Exposure contrast:\n&lt;Text&gt;\n    Outcome:\n&lt;Text&gt;\n    Analytical software\n&lt;Text&gt;\n    Model(s):\n&lt;Text&gt;\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nTable 11:  Sensitivity analyses – rationale, strengths and limitations \n  \n    \n    \n      Analysis\n      What is being varied?\n      Why (expected learning)?\n      Strengths of the sensitivity analysis compared to primary\n      Limitations of the sensitivity analysis compared to primary\n    \n  \n  \n    &lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#data-sources",
+    "href": "protocol/Quarto_template/protocol.html#data-sources",
+    "title": "Study protocol",
+    "section": "7.6 Data sources",
+    "text": "7.6 Data sources\n\n\n7.6.1 Context and rationale for data sources\nReason for selection: \nStrengths of data source(s): \nLimitations of data source(s): \nData source provenance/curation: \n\n\n\n\n\n\n\n\nTable 12:  Metadata about data sources and software \n  \n    \n    \n      Data element\n      Data 1\n      Data 2\n      Data 3\n    \n  \n  \n    Data Sources:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Study Period:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Eligibile Cohort Entry Period:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Data version (or date of last update):\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Data sampling/extraction criteria:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Type(s) of data:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Data linkage\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Conversion to CDM:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;\n    Software for data management:\n&lt;Text&gt;\n&lt;Text&gt;\n&lt;Text&gt;"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#data-management",
+    "href": "protocol/Quarto_template/protocol.html#data-management",
+    "title": "Study protocol",
+    "section": "7.7 Data management",
+    "text": "7.7 Data management"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#quality-control",
+    "href": "protocol/Quarto_template/protocol.html#quality-control",
+    "title": "Study protocol",
+    "section": "7.8 Quality control",
+    "text": "7.8 Quality control"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#study-size-and-feasibility",
+    "href": "protocol/Quarto_template/protocol.html#study-size-and-feasibility",
+    "title": "Study protocol",
+    "section": "7.9 Study size and feasibility",
+    "text": "7.9 Study size and feasibility"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#loaded-packages",
+    "href": "protocol/Quarto_template/protocol.html#loaded-packages",
+    "title": "Study protocol",
+    "section": "13.1 Loaded packages",
+    "text": "13.1 Loaded packages\n\n\n\n\n\n\n\n\n\n\n \npackage\nloadedversion\n\n\n\n\ndplyr\ndplyr\n1.1.1\n\n\nforcats\nforcats\n1.0.0\n\n\nggplot2\nggplot2\n3.4.2\n\n\ngt\ngt\n0.9.0\n\n\nhere\nhere\n1.0.1\n\n\nlubridate\nlubridate\n1.9.2\n\n\npurrr\npurrr\n1.0.1\n\n\nreadr\nreadr\n2.1.4\n\n\nstringr\nstringr\n1.5.0\n\n\ntibble\ntibble\n3.2.1\n\n\ntidyr\ntidyr\n1.3.0\n\n\ntidyverse\ntidyverse\n2.0.0"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#session-info-1",
+    "href": "protocol/Quarto_template/protocol.html#session-info-1",
+    "title": "Study protocol",
+    "section": "13.2 Session info",
+    "text": "13.2 Session info\n\n\nR version 4.2.1 (2022-06-23)\nPlatform: x86_64-apple-darwin17.0 (64-bit)\nlocale: en_US.UTF-8||en_US.UTF-8||en_US.UTF-8||C||en_US.UTF-8||en_US.UTF-8\nattached base packages: stats, graphics, grDevices, datasets, utils, methods and base\nother attached packages: gt(v.0.9.0), here(v.1.0.1), lubridate(v.1.9.2), forcats(v.1.0.0), stringr(v.1.5.0), dplyr(v.1.1.1), purrr(v.1.0.1), readr(v.2.1.4), tidyr(v.1.3.0), tibble(v.3.2.1), ggplot2(v.3.4.2) and tidyverse(v.2.0.0)\nloaded via a namespace (and not attached): tidyselect(v.1.2.0), xfun(v.0.38), pander(v.0.6.5), colorspace(v.2.1-0), vctrs(v.0.6.0), generics(v.0.1.3), htmltools(v.0.5.4), yaml(v.2.3.7), utf8(v.1.2.3), rlang(v.1.1.0), pillar(v.1.9.0), glue(v.1.6.2), withr(v.2.5.0), bit64(v.4.0.5), sessioninfo(v.1.2.2), lifecycle(v.1.0.3), munsell(v.0.5.0), gtable(v.0.3.3), htmlwidgets(v.1.6.2), evaluate(v.0.20), knitr(v.1.42), tzdb(v.0.3.0), fastmap(v.1.1.1), parallel(v.4.2.1), fansi(v.1.0.4), Rcpp(v.1.0.10), renv(v.0.16.0), scales(v.1.2.1), vroom(v.1.6.1), jsonlite(v.1.8.4), bit(v.4.0.5), hms(v.1.1.3), digest(v.0.6.31), stringi(v.1.7.12), grid(v.4.2.1), rprojroot(v.2.0.3), cli(v.3.6.0), tools(v.4.2.1), magrittr(v.2.0.3), sass(v.0.4.5), crayon(v.1.5.2), pkgconfig(v.2.0.3), xml2(v.1.3.3), timechange(v.0.2.0), rmarkdown(v.2.20), rstudioapi(v.0.14), R6(v.2.5.1) and compiler(v.4.2.1)"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#repositories",
+    "href": "protocol/Quarto_template/protocol.html#repositories",
+    "title": "Study protocol",
+    "section": "13.3 Repositories",
+    "text": "13.3 Repositories\n\n\n\nrepos:\n\n\n\n\n\n\nCRAN\n\n\n\n\nhttps://cran.rstudio.com"
+  }
+]

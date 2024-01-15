@@ -1,0 +1,24 @@
+# This file is a template for continuous inetgration and deployment (CI/CD) using GitLab. 
+# The template will likely need editing before it works on your project.
+# To configure custom runners, modify the "- pages" runner example name in this template.
+# In this example CI/CD yml file, the runner would be used to continuously deploy
+# files stored in the "public" sub-directory. 
+# See also "_quarto.yml"
+
+image: busybox
+
+default:
+  tags:
+  - pages
+
+pages:
+  stage: deploy
+  script:
+    - echo "The site will be deployed to $CI_PAGES_URL"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+

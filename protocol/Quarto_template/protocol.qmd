@@ -1,0 +1,722 @@
+---
+title: "Study protocol"
+subtitle: "Based on the HARPER template"
+date: "`r Sys.Date()`"
+date-format: long
+author:
+  - name: FIRST, LAST
+    corresponding: true
+    orcid: 0000-0000-0000-0000
+    email: test@web.de
+    url: ULR.com
+    affiliations:
+      - name: AFFILIATION NAME
+        address: ADDRESS
+        city: CITY
+        state: STATE
+        postal-code: 00000
+echo: false
+number-sections: true
+bibliography: references.bib
+csl: pharmacoepidemiology-and-drug-safety.csl
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(here)
+library(gt)
+
+# global gt table options
+gt_style <- function(x) gt::tab_options(x, data_row.padding = gt::px(3))
+```
+
+{{< pagebreak >}}
+
+# Title page
+
+This protocol is based on the *HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force* (**HARPER**) protocol by Wang SV et al.[@Wang2022;@Wang2023]
+
+## Title {.unnumbered .unlisted}
+
+<TEXT>
+
+## Research question and objectives {.unnumbered .unlisted}
+
+<TEXT>
+
+## Protocol version {.unnumbered .unlisted}
+
+<TEXT>
+
+## Contributors {.unnumbered .unlisted}
+
+<TEXT>
+
+**Primary investigator contact information:** <TEXT>
+
+**Contributor names:** <TEXT>
+
+## Study registration {.unnumbered .unlisted}
+
+**Site:** <TEXT>
+
+**Identifier:** <TEXT>
+
+## Sponsor {.unnumbered .unlisted}
+
+**Organization:** <TEXT>
+
+**Contact:** <TEXT>
+
+## Conflict of interest {.unnumbered .unlisted}
+
+{{< pagebreak >}}
+
+# Abstract
+
+<!-- Include a brief description of the background, research question and objectives, study design, and data sources. -->
+
+<TEXT>
+
+# Amendments and updates
+
+<!-- 
+
+For a table template to populate, please see protocol/Quarto_template/1_tbl_amendments.csv
+
+Indicate amendments and updates to the study protocol in a table as indicated below. In the “reason” column, not whether the amendment occurred after protocol registration/finalization/approval.
+-->
+
+```{r}
+#| label: amendments
+#| tbl-cap: "Amendments and updates"
+#| message: false
+
+read_csv(
+  file = here("protocol/Quarto_template", "0_tbl_amendments.csv"),
+  show_col_types = FALSE
+  ) %>% 
+  gt() %>% 
+  gt_style()
+```
+
+# Milestones
+<!-- 
+
+Enter planned dates for study milestones.
+
+For a table template to populate, please see protocol/Quarto_template/2_tbl_milestones.csv
+If used, set eval: false to eval: true
+
+Milestone: Brief description of the milestone or deliverable
+Date: Anticipated date of completion
+-->
+
+```{r}
+#| label: tbl-milestones
+#| tbl-cap: "Milestones"
+#| message: false
+read_csv(
+  file = here("protocol/Quarto_template", "1_tbl_milestones.csv"),
+  show_col_types = FALSE
+  ) %>% 
+  gt() %>% 
+  gt_style()
+```
+
+# Rationale and background
+
+**What is known about the condition:** <TEXT>
+
+**What is known about the exposure of interest:** <TEXT>
+
+**Gaps in knowledge:** <TEXT>
+
+**What is the expected contribution of this study?** <TEXT>
+
+The purpose of this protocol is to describe the emulation of trial INSERT TRIAL NAME. The primary trial estimate targeted for emulation is INSERT. Market availability of EXPOSURE began DATE.
+
+# Research question and objectives
+<!-- 
+
+The primary objective(s) defines the main aim of the study whereas the hypothesis refers to the main question being tested. This is usually what the study will be powered to detect. Secondary objectives are ancillary questions that may provide more information about the effects of treatment. Exposure refers to the therapeutic of interest whereas the comparator refers to an alternative option. The outcome refers to the clinical or other condition for which you are interested in understanding the effect of exposure. Time refers to when follow up begins and ends. Setting refers to the care settings that are relevant for the study (e.g. inpatient, ambulatory, emergency department). The main measure of effect refers to how you will estimate the effect of the exposure compared to the comparator on the outcome (e.g. hazard ratio, risk ratio, risk difference). 
+
+Duplicate table sections A and B as necessary for co-primary objectives or multiple secondary objectives.
+-->
+
+```{r}
+#| label: tbl-objectives
+#| tbl-cap: "Research questions and objectives"
+#| tbl-subcap: 
+#|   - "A. Primary research question and objective"
+#|   - "B. Secondary research question and objective"
+#| layout-ncol: 1
+read_csv(
+  file = here("protocol/Quarto_template", "2a_tbl_primary_objective.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+
+read_csv(
+  file = here("protocol/Quarto_template", "2b_tbl_secondary_objective.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+# Research methods
+
+## Study design
+
+**Research design (e.g. cohort, case-control, etc.):** <TEXT>
+
+**Rationale for study design choice:** <TEXT>
+
+## Study design diagram[@Schneeweiss2019;@lund2021]
+<!--  
+
+Create a design diagram to describe time 0 and relevant study windows used in the study design. A recommended framework is outlined in Schneeweiss et al. Graphical Depiction of Longitudinal Study Designs in Health Care Databases. Ann Intern Med. 2019; 170:398–406. The diagram following this framework can be created using power point templates or other software program of choice (www.repeatinitiative.org/projects). It is intended to be read from top to bottom, reflecting the order of operations to create an analytic cohort from a source longitudinal healthcare database. Temporality of assessment windows are clearly shown relative to the study entry (“index”) date, which is considered time 0. Bracketed number ranges denote the inclusive time windows for washout, inclusion/exclusion, and covariate assessment windows as well as follow up. Whether or not time 0 is included in an assessment window can also be visually distinguished by whether it overlaps the vertical arrow representing the primary anchor.
+The diagram may include footnotes specifying the inclusion/exclusion criteria, covariates, and censoring criteria relevant to each assessment window. 
+
+Alternative design visualization approaches can be used as appropriate.
+
+There is also a great shiny app available under: https://presc.sdu.dk/repeat-diagrams/
+
+-->
+
+## Setting
+
+### Context and rationale for definition of time 0 (and other primary time anchors) for entry to the study population
+<!--
+
+The criteria that define the primary temporal anchor(s) that define how patients enter the study population are specified in this section.
+Other assessment windows used in the study design are defined relative to the primary temporal anchor(s). For example, assessment windows for inclusion-exclusion criteria or the follow up window. The primary temporal anchor is sometimes referred to as 'time 0', an
+'index date' or 'cohort entry date'
+
+There should be (at least) one row for each study population. A key primary anchor is time 0, for when patients enter the study population and/or begin treatment, depending on the study. A primary time anchor is used as an anchor for defining assessment windows for inclusion-exclusion criteria, baseline characteristics, or follow up. If the study is descriptive, there may only be one primary temporal anchor for the study population. An active comparator study may have 2 rows, one for the exposure of interest and one for the comparator. Other, more complex study designs may have multiple primary temporal anchors. For example, a nested case-control study may have a primary anchor defined for the base cohort, and another for the case-defining event. A pregnancy study may have anchors defined by last menstrual period, trimester boundaries, and delivery date. See examples in Appendix 3.
+
+The table below requests the following operational details:
+
+Study population name(s): A brief text descriptor naming the study population that is identified for a primary or secondary analysis (e.g. exposed, comparator, pregnant women, patients with diabetes)
+
+Time anchor description: A brief text description of the criterion used to define the time anchor, including at least one entry to define time 0, the point at which the patient enters the cohort (e.g. date of incident dispensation of Drug X, date of heart failure diagnosis, last menstrual period)
+
+Number of entries: Indicate whether patients are allowed to enter the study population only once or multiple times (e.g. single entry, multiple entry)
+
+Type of entry: Indicate whether the criterion for entry to the study population reflects an incident, prevalent, or other condition.
+
+Washout window: If entry to the study population is defined as incident, use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the washout window. For example, [-180, -1] would reflect a washout window of 180 days prior to time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+Care setting Specify the care setting(s) that are used in the algorithm to define the time 0 (or other primary anchor) criterion. For
+example, IP = inpatient, ED = emergency department, etc.
+
+Code type: Specify the type(s) of clinical codes that are used to define the time 0 (or other primary anchor) criterion. For example, ICD10
+= International Classification of Diseases 10th edition, DC = National Drug Classification, etc.
+
+Diagnosis position: If the algorithm to define the time 0 (or other primary anchor) criterion used inpatient codes, specify whether the algorithm restricts to primary diagnosis codes (indicating that the code is the primary reason for the encounter) or allows codes in secondary or any position (e.g. primary, secondary, any, n/a)
+
+Incident with respect to: If the type of entry is defined as incident, provide a brief text description of what the patient is required to be incident to. For example, when identifying incident users of Drug X (oral formulation only), the investigator may wish to require that patients be incident with respect to Drug X (oral formulation) as well as Drug X (intravenous formulation) and Drug Y. This would be operationalized as having no record of exposure to any of these drugs during the specified washout period.
+
+Measurement characteristics/validation: If there are measurement characteristics for the outcome algorithm (e.g. PPV, sensitivity, specificity) from publications, or from outcome validation within the study population (e.g., medical record review), provide this information.
+
+Source of algorithm: Specify the source of algorithms to define the time 0 or primary anchor criteria.
+
+TEXT -->
+
+```{r}
+#| label: tbl-entry
+#| tbl-cap: "Operational Definition of Time 0 (index date) and other primary time anchors."
+
+read_csv(
+  file = here("protocol/Quarto_template", "3_tbl_entry.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+### Context and rationale for study inclusion criteria
+<!--
+
+The study inclusion criteria are described conceptually, and the context or rationale for applying these criteria are described in this section. Note that defining "observable" patient time in the healthcare data source will almost always be relevant as an inclusion criterion.
+When using administrative claims data, this can be measured with dates of enrolment in insurance coverage, with or without bridging of short gaps in enrolment. When using electronic health record data, defining observable patient time may require making some strong assumptions. For example, assuming that patient encounters are always observable, that patients are observable between the first and last recorded encounter in the record, that patients are observable for X days before and after any recorded encounter, etc. Alternatively, one could specify inclusion based on algorithms to measure "loyalty" to a healthcare provider or HR system.
+
+-->
+
+<TEXT>
+
+<!--
+
+The table below requests the following operational details:
+
+Criterion: A brief text entry naming the inclusion criterion (e.g. baseline observable time, age, sex, atrial fibrillation)
+
+Details: An optional brief text entry to provide more information about the inclusion criterion (e.g. age in years defined by (time 0 - year of birth)/365, baseline enrolment measured by Part A, B, D and no HMO insurance coverage with 30 day gaps allowed), 2 codes required 
+
+Order of application: Specify whether the inclusion criterion is applied before or after selection of the study entry date. For example, enter
+"before" if you will identify all possible study entry dates and apply the inclusion criterion to each possible entry date before choosing one or more study entry dates that has met the inclusion criterion. Erker "after" if you select the first possible study entry date and then apply the inclusion criterion. If the patient does not meet the inclusion criterion, then the patient will not be included. These decisions can impact which samples of person-time are included in the study.
+
+Assessment window: Use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the window over which to evaluate patient data relevant for the inclusion criterion. For example, [-180, 0] would reflect an assessment window of 180 days prior to and including time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+-->
+
+```{r}
+#| label: tbl-inclusion
+#| tbl-cap: "Operational Definitions of Inclusion Criteria"
+
+read_csv(
+  file = here("protocol/Quarto_template", "4_tbl_inclusion.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+### Context and rationale for study exclusion criteria
+<!--
+The study exclusion criteria are described conceptually, and the context or rationale for applying these criteria are described in this section.
+
+The table below requests the following operational details:
+
+Criterion: A brief text entry naming the exclusion criterion (e.g. age, sex, atrial fibrillation)
+
+Details: An optional brief text description to provide more information about the exclusion criterion (e.g. age in years defined by (time 0 - year of birth)/365, baseline enrollment measured by Part A, B, D and no HMO insurance coverage with 30 day gaps allowed), 2 codes required
+
+Order of application: Specify whether the exclusion criterion is applied before or after selection of the study entry date. For example, enter
+"before" if you plan to apply the criterion, identify all possible study entry dates, and then choose one or more. Enter "after" if you select the first possible study entry date and then apply the exclusion criterion. If the patient does not meet the criterion, then the patient drops out. These decisions can impact which samples of person-time are included in the study.
+
+Assessment window: Use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the window over which to evaluate patient data relevant for the exclusion criterion. For example, [-180, 0] would reflect an assessment window of 180 days prior to and including time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+Care setting: Specify the care setting(s) that are used in the algorithm to define the exclusion criterion. For example, IP = inpatient, ED =
+emergency department, etc.
+
+Code type: Specify the type(s) of clinical codes that are used to define the exclusion criterion. For example, ICD10 = International
+Classification of Diseases 10th edition, NDC = National Drug Classification, etc.
+
+Diagnosis position: If the algorithm to define the exclusion criterion used inpatient codes, specify whether the algorithm restricts to primary diagnosis codes (indicating that the code is the primary reason for the encounter) or allows codes in secondary or any position (e.g. primary, secondary, any, n/a)
+Applied to study populations: Indicate which study populations the exclusion criterion should be applied to (study population names are specified in Table 2).
+
+Measurement characteristics/validation: If there are measNrement characteristics for the outcome algorithm (e.g. PPV, sensitivity, specificity) from publications, or from outcome validation within the study population (e.g., medical record review), provide this information.
+
+Source of algorithm: Specify the source of algorithms to define the exclusion criteria.
+
+-->
+
+```{r}
+#| label: tbl-exclusion
+#| tbl-cap: "Operational Definitions of Exclusion Criteria"
+
+read_csv(
+  file = here("protocol/Quarto_template", "5_tbl_exclusion.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+## Variables
+<!--
+Context, rationale, and operation definition of exposures, outcomes, and other variables including measured risk factors, co-morbidities, co-medications, potential confounding variables and effect modifiers, etc. are specified in this section.
+-->
+
+### Context and rationale for exposure(s) of interest
+<!--
+The study exposure (and comparator) are described conceptually, and the context or rationale for the choices are provided in this section
+-->
+
+<TEXT>
+
+**Algorithm to define duration of exposure effect:** <!--
+If relevant, describe how duration of exposure will be defined operationally. Consider stockpiling algorithms, allowable gaps, and hypothesized duration of biological effect beyond the last available dose.
+-->
+
+<TEXT>
+
+<!--
+Populate table if exposure is not already defined in Table 1 as a primary anchor criterion for defining time 0.
+
+The table below requests the following operational details:
+
+Exposure group names: A brief text entry naming the exposure groups (e.g. Drug X, Drug Y)
+
+Details: An optional brief text description to provide more information about the exposure (e.g. oral formulation of Drug X)
+
+Assessment window: Use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the window over which to evaluate patient data relevant for defining exposure status. For example, [-180, 0] would reflect an assessment window of 180 days prior to and including time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+Washout window: If entry to the study population is defined as incident, use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the washout window. For example, [-180, -1] would reflect a washout window of 180 days prior to time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+Care setting: Specify the care setting(s) that are used in the algorithm to define exposure. For example, IP = inpatient, ED = emergency
+department, etc.
+
+Code type: Specify the type(s) of clinical codes that are used to define exposure. For example, ICD10 = International Classification of
+Diseases 10th edition, NDC = National Drug Classification, etc.
+
+Diagnosis position: If the algorithm to define exposure used inpatient codes, specify whether the algorithm restricts to primary diagnosis codes (indicating that the code is the primary reason for the encounter) or allows codes in secondary or any position (e.g. primary, secondary, any, n/a)
+
+Applied to study populations: Indicate which study populations the exposure definition should be applied to (study population names are specified in Table 2).
+
+Incident with respect to: If exposure is defined as incident, provide a brief text description of what the patient is required to be incident to.
+For example, when identifying incident users of Drug X (oral formulation only), the investigator may wish to require that patients be incident with respect to Drug X (oral formulation) as well as Drug X (intravenous formulation) and Drug Y. This would be operationalized as having no record of exposure to any of these drugs during the specified washout period.
+
+Measurement characteristics/validation: If there are measurement characteristics for the outcome algorithm (e.g. PP, sensitivity, specificity) from publications, or from outcome validation within the study population (e.g., medical record review), provide this information.
+
+Source of algorithm: Specify the source of algorithms to define the exposure
+-->
+
+```{r}
+#| label: tbl-exposure
+#| tbl-cap: "Operational Definitions of Exposure"
+
+read_csv(
+  file = here("protocol/Quarto_template", "6_tbl_exposure.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  tab_options(
+    table.width = "75%",
+    table.font.size = 15,
+    quarto.use_bootstrap = TRUE
+    ) %>% 
+  gt_style()
+```
+
+### Context and rationale for outcome(s) of interest
+<!--
+The study outcome(s) are described conceptually, and the context or rationale for the choices are provided in this section.
+-->
+
+<TEXT>
+
+<!--
+The table below requests the following operational details:
+
+Outcome name: A brief text entry naming the outcome (e.g. myocardial infarction, death)
+
+Details: An optional brief text description to provide more information about the outcome (e.g. 2nd of 2 codes within 7 days)
+
+Primary outcome?: Indicate whether the outcome is a primary or secondary outcome (e.g. Yes, if primary; no, if secondary)
+
+Type of outcome: Specify the variable type for the outcome (e.g. time-to-event, binary, count, continuous)
+
+Washout window: If the outcome is required to be incident, use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the washout window. For example, [-180, -1] would reflect a washout window of 180 days prior to time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+Care setting Specify the care setting(s) that are used in the algorithm to define the outcome. For example, IP = inpatient, ED =
+emergency department, etc.
+
+Code type: Specify the type(s) of clinical codes that are used to define the outcome. For example, ICD10 = International Classification of
+Diseases 10th edition, NDC = National Drug Classification, etc.
+
+Diagnosis position: If the algorithm to define the outcome used inpatient codes, specify whether the algorithm restricts to primary diagnosis codes (indicating that the code is the primary reason for the encounter) or allows codes in secondary or any position (e.g. primary, secondary, any, n/a)
+
+Applied to study populations: Indicate which study populations the outcome should be evaluated in (study population names are specified in Table 2).
+
+Measurement characteristics/validation: If there are measurement characteristics for the outcome algorithm (e.g. PP, sensitivity, specificity) from publications, or from outcome validation within the study population (e.g., medical record review), provide this information.
+
+Source of algorithm: Specify the source of algorithms to define the outcome.
+-->
+
+```{r}
+#| label: tbl-outcome
+#| tbl-cap: "Operational Definitions of Outcome"
+
+read_csv(
+  file = here("protocol/Quarto_template", "7_tbl_outcome.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  tab_options(
+    table.width = "75%",
+    table.font.size = 15
+    ) %>% 
+  gt_style()
+```
+
+### Context and rationale for follow up
+<!--
+The study follow up is described conceptually, and the context or rationale for the choices are provided in this section.
+-->
+
+<TEXT>
+<!--
+The table below requests the following operational details:
+
+Follow up start: Specify when follow up begins relative to time 0 (e.g. day 1). Consider whether an induction/latency window is relevan the hypothesized onset of the effect of exposure on the outcome (operationally, this would mean delaying the start of follow up (e.g. follow up start on day 30).
+
+Follow up end: Indicate 'Yes' or 'No' for each of the options. Specify additional details as relevant.
+-->
+
+```{r}
+#| label: tbl-follow_up
+#| tbl-cap: "Operational Definitions of Follow up"
+
+read_csv(
+  file = here("protocol/Quarto_template", "8_tbl_follow_up.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+### Context and rationale for covariates (confounding variables and effect modifiers, e.g. risk factors, comorbidities, comedications)
+<!--
+The study covariates are described conceptually, and the context or rationale for the choices are provided in this section. Description of data driven methods to select covariates through machine learning algorithms can be described here, with detail on operational choices including parameter settings for the macro/function that is used.
+-->
+
+<TEXT>
+
+<!--
+The table below requests the following operational details:
+
+Characteristic: A brief text entry naming the characteristic (e.g. age, sex, atrial fibrillation)Details: An optional brief text description to provide more information about the covariate (e.g. age in years defined by (time 0 – year of birth)/365)
+
+Type of variable: Specify the variable type for the covariate (e.g. binary, count, continuous)
+
+Assessment window: Use bracketed numbers representing time intervals anchored on a primary anchor (usually time 0) to specify the window over which to evaluate patient data relevant for the covariate. For example, [-180, 0] would reflect an assessment window of 180 days prior to and including time 0, where the brackets indicate that the window is inclusive of the endpoints.
+
+Care setting: Specify the care setting(s) that are used in the algorithm to define the covariate. For example, IP = inpatient, ED = emergency department, etc.
+
+Code type: Specify the type(s) of clinical codes that are used to define the covariate. For example, ICD10 = International Classification of Diseases 10th edition, NDC = National Drug Classification, etc.
+
+Diagnosis position: If the algorithm to define the covariate used inpatient codes, specify whether the algorithm restricts to primary diagnosis codes (indicating that the code is the primary reason for the encounter) or allows codes in secondary or any position (e.g. primary, secondary, any, n/a)Applied to study populations: Indicate which study populations the covariate should be measured in (study population names are specified in Table 2).
+
+Measurement characteristics/validation:If there are measurement characteristics for the outcome algorithm (e.g. PPV, sensitivity, specificity) from publications, or from outcome validation within the study population (e.g., medical record review), provide this information.
+-->
+
+```{r}
+#| label: tbl-covariates
+#| tbl-cap: "Operational Definitions of Covariates"
+
+read_csv(
+  file = here("protocol/Quarto_template", "9_tbl_covariates.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  tab_options(
+    table.width = "75%",
+    table.font.size = 15
+    ) %>% 
+  gt_style()
+```
+
+## Data analysis
+
+### Context and rationale for analysis plan
+<!--
+The inferential data analysis plan is described conceptually, and the context or rationale for the choices are provided in this section. 
+-->
+
+<TEXT>
+
+<!--
+The table below requests the following operational details for each sub-table that reflect the primary and secondary analyses:
+
+Hypothesis: State the hypothesis being tested
+
+Exposure contrast: State the exposure contrast being evaluated
+
+Outcome: State the outcome being evaluated
+
+Analytic software: Name the software being used (include packages, version numbers, etc.)
+
+Model(s): Provide details about the models involved in inferential analyses (e.g. Cox proportional hazards outcome model: followuptime*status(0) = exposure; Logistic regression propensity score model: exposure = COV1 + COV2)
+
+Confounding adjustment method: Check the relevant methods and provide relevant details as prompted in the table.
+
+Missing data methods: Check the relevant methods and provide relevant details as prompted in the table.
+
+Subgroup analysis: List subgroup analyses that will be conducted based on the primary analysis parameters
+-->
+
+#### A. Primary analysis
+
+```{r}
+#| label: tbl-analysis
+#| tbl-cap: "Primary, secondary, and subgroup analysis specification"
+#| tbl-subcap: 
+#|   - "A. Primary analysis"
+#|   - "B. Secondary analysis"
+#| layout-ncol: 1
+read_csv(
+  file = here("protocol/Quarto_template", "10a_tbl_primary_analysis.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+
+read_csv(
+  file = here("protocol/Quarto_template", "10b_tbl_secondary_analysis.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+<!--
+The table below is used to detail the sensitivity analyses, the rationale for conducting them (in other words, stating what the investigator intends to learn from doing the sensitivity analysis), and any strengths or limitations of the sensitivity analysis relative to the primary analysis.
+-->
+
+```{r}
+#| label: tbl-sensitivity
+#| tbl-cap: "Sensitivity analyses – rationale, strengths and limitations"
+
+read_csv(
+  file = here("protocol/Quarto_template", "11_tbl_sensitivity.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+## Data sources
+<!--
+This section includes structured prompts to state the reasons for selecting the data, strengths and limitations of the data source(s) with respect to the study objective and capturing inclusion-exclusion criteria, exposure, outcome, covariates, and follow up time. Include context about the potential impact of missing data and information about data source/provenance/curation. This may include a detailed evaluation of the fitness-for-purpose of data source options.
+-->
+
+### Context and rationale for data sources
+
+**Reason for selection:** <Text>
+
+**Strengths of data source(s):** <Text>
+
+**Limitations of data source(s):** <Text>
+
+**Data source provenance/curation:** <Text>
+
+<!--
+The table below requests the following meta-data details:
+
+Data source(s): Provide the name of the data source
+
+Study period: Provide the calendar time boundaries for data used to create the analysed study dataset, including exposures, inclusion and exclusion criteria, covariates, outcome, and follow-up.
+
+Eligible cohort entry period: Provide the calendar time boundaries for during which patients could enter the study population.
+
+Data version (or date of last update): Provide information on the version of the source data. This may be a version number, date of last extract-transform-load (ETL) or other meta-data to identify which version of the data were (or will be) used for the research.
+
+Data linkage: Indicate whether the data will be linked to another data source (and if so, how and provide linkage performance characteristics if available). Details can be provided in an appendix that is referenced in the table.
+
+Conversion to common data model: Indicate whether the data is converted to a common data model and which version (e.g. Sentinel CDMv 8.0.0, OMOP CDM v 6.0).
+
+Software for data management: Name software that is used to manage or maintain the data
+-->
+
+```{r}
+#| label: tbl-data
+#| tbl-cap: "Metadata about data sources and software"
+#| out-width: 50%
+read_csv(
+  file = here("protocol/Quarto_template", "12_tbl_data.csv"),
+  show_col_types = FALSE
+  ) %>%
+  gt() %>% 
+  gt_style()
+```
+
+## Data management
+<!--
+Describe the data management procedures used in the study, including procedures, policies, and infrastructure for data storage, transfer, back up, and information security. 
+-->
+
+<TEXT>
+
+## Quality control
+<!--
+Describe steps to ensure data quality including quality assurance and quality check procedures, double programming, source data verification, validation of endpoints, data transformation and linkages, assessment of the reliability of the data (e.g. missing or miscoded data, lags in data capture). 
+-->
+
+<TEXT>
+
+## Study size and feasibility
+<!--
+Provide projected study size, precision sought for study estimates or calculation of the sample size that can minimally detect a pre-specified risk with a pre-specified statistical precision. All assumptions used to calculate the study size or precision of the study should be presented and justified (including whether feasibility counts were generated).
+-->
+
+<TEXT>
+
+<!--Provide table with relevant information-->
+
+```{r}
+#| label: tbl-power
+#| tbl-cap: "Power and sample size"
+
+```
+
+# Limitation of the methods
+<!--
+Discuss potential limitations of the study design, and analytic methods, including issues relating to confounding, bias, generalisability, andrandom error. Discuss the steps that will be taken to reduce the potential impact of these limitations, e.g. in terms of design or sensitivity analyses. 
+-->
+
+<TEXT>
+
+# Protection of human subjects
+<!--
+If relevant, discuss privacy safeguards, ethics or human subjects review board processes taken to comply with requirements for minimizing the risks and ensuring the privacy of patients whose data is used for non-interventional studies involving secondary use of real-world data. If the study is considered exempt by the relevant ethics board this should be stated with the reason it is considered exempt.
+-->
+
+<TEXT>
+
+# Reporting of adverse events
+<!--
+If relevant, describe procedures for the collection, management and reporting of individual cases of adverse events/adverse reactions (seeGVP Module VI or local laws and regulations where the study is conducted and the data is collected) and any new information that might influence the evaluation of the benefit-risk balance of the product while the study is being conducted. Arrangements made between marketing authorization holders for the management and reporting of adverse events/reactions in joint post-authorization safety studies should be specified. For studies where reporting is not required, this should be stated. 
+
+Depending on where the study is conducted local laws and regulations may differ. As an example, the European Medicines Agency has published guidance on when this section is required: Guideline on good pharmacovigilance practices (GVP) Module VI – Collection, management and submission of reports of suspected adverse reactions to medicinal products (Rev 2). 2017. Accessed 11/18/2021.
+https://www.ema.europa.eu/en/human-regulatory/post-authorisation/pharmacovigilance/good-pharmacovigilance-practices.
+
+“The requirements provided in this Module do not apply to non-interventional post-authorisation studies conducted by organisations such as academia, medical research charities or research organisations in the public sector. These organisations should follow the local requirements as regards the submission of cases of suspected adverse reactions to the competent authority in the Member State where the reaction occurred. However, where a study conducted by one of these organisations is directly initiated, managed, or financed by a marketing authorisation holder, or where its design is controlled by a marketing authorisation holder (voluntarily or pursuant to obligations imposed in accordance with Article 21a and 22a of Directive 2001/83/EC, or Article 9(4) and 10a of Regulation (EC) No 726/2004), the requirements provided in this Module are applicable.”
+-->
+
+<TEXT>
+
+# References
+<!--
+Provide a numbered list of references for any works cited in the protocol. Sufficient information must be provided to retrieve the cited work.
+
+BibTex-created citations will be automaticlly referenced here, so no further action is needed.
+
+<Numbered list>
+-->
+
+::: {#refs}
+:::
+
+# Appendices
+<!--
+Provide a list of appendices that are provided as separate documents. The expectation is that machine readable appendices that list out the actual clinical code algorithms used to define study parameters outlined in the protocol tables will be provided. Other appendices may be included to provide more detail on other things such as decisions made when converting source data to a common data model or details on data linkage and performance.
+
+< List of appendices >
+-->
+
+# Session info
+
+## Loaded packages
+
+```{r, class.source = 'fold-hide'}
+pander::pander(subset(data.frame(sessioninfo::package_info()), attached==TRUE, c(package, loadedversion)))
+```
+
+## Session info
+
+```{r, class.source = 'fold-hide'}
+pander::pander(sessionInfo())
+```
+
+## Repositories
+
+```{r, class.source = 'fold-hide'}
+pander::pander(options('repos'))
+```
+
+# Change log
+
+Detailed change log based on previous commits.
+
+```{bash}
+git log --format='%aD
+Changes made by: %aE 
+Commit hash:  %h
+Changes made: %B' --follow -- protocol.qmd
+```

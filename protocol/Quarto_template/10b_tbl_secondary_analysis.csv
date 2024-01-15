@@ -1,0 +1,9 @@
+﻿Analysis element,Specification
+Hypothesis:,<Text>
+Exposure contrast:,<Text>
+Outcome:,<Text>
+Analytical software,<Text>
+Model(s):,<Text>
+Conofunding adjustment method,"Name method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other"
+Missing data methods,"Name method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other."
+Subgroup Analyses,List all subgroups

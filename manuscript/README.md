@@ -1,0 +1,1 @@
+manuscript: Sub-directory where manuscript and supplementary material can be drafted and stored.

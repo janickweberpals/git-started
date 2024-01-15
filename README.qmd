@@ -1,0 +1,173 @@
+---
+title: "README"
+format: gfm
+editor: visual
+bibliography: references.bib
+csl: pharmacoepidemiology-and-drug-safety.csl
+---
+
+## Background
+
+This repository complements the `Let's git it started` introduction to git for reproducible analytic workflows in real-world evidence (RWE) studies.
+
+[Note]{.underline}: This is an example repository based on the HARPER template [@wang2022harmonized] (available under [gitlab-scm.partners.org/drugepi/harper](https://gitlab-scm.partners.org/drugepi/harper)) that uses a toy example to demonstrate the composition of a potential RWE study repository and how to version-control and track changes.
+
+## Mock study
+
+### Dataset
+
+For this mock study we will use the `smdi_data_complete` dataset that comes with the smdi R package.[@smdi]
+
+### Background
+
+```{r}
+library(smdi)
+suppressPackageStartupMessages(library(dplyr))
+
+# smdi_data_complete does not come with
+# a patient ID, so we artificially create
+# one for this example
+data <- smdi_data_complete |> 
+  mutate(patientID = as.character(paste0("patientID", dplyr::row_number())))
+
+data |> 
+  glimpse()
+```
+
+Let's assume we want to conduct a RWE study comparing two antineoplastic treatments in the context of real-world overall survival (rwOS) outcomes.
+
+### Eligibility criteria
+
+For this example we want to apply a couple of eligibility criteria, i.e.,
+
+1.  Age \> 21 years at index date (`age_num > 21`)
+
+2.  No history of smoking (`smoking_cat == 0`)
+
+3.  PD-L1 biomarker expression \> 50% (`pdl1_num > 50`)
+
+```{r}
+#| label: fig-attrition
+#| fig-cap: "Cohort attrition and final study size."
+#| dpi: 100
+
+library(visR)
+
+attrition <- get_attrition(
+  # dataset
+  data = data,
+  
+  # labels                               
+  criteria_descriptions = c("Age > 21 years at index date",
+                             "No history of smoking"),
+  # coded condition
+  criteria_conditions   = c("age_num > 21",
+                             "smoking_cat == 0"),
+  # patient ID column
+  subject_column_name   = "patientID"
+  
+  )
+
+visr(
+  x = attrition,
+  description_column_name = "Criteria", 
+  value_column_name = "Remaining N"
+  )
+```
+
+### Propensity score matching
+
+We perform a 1:1 propensity score matching[@MatchIt], adjusting for pre-exposure covariates to control for confounding bias.
+
+```{r}
+#| label: ps-matching
+#| fig-cap: "Covariate balance before and after propensity score matching."
+#| dpi: 100
+
+library(MatchIt)
+suppressPackageStartupMessages(library(cobalt))
+# specify ps model
+exposure_form <- as.formula("exposure ~ age_num + female_cat + ses_cat")
+
+# estimate 1:1 propensity score matching
+# with 0.2 caliper on propensity score
+ps_matching <- matchit(
+  formula = exposure_form,
+  data = data,
+  ratio = 1,
+  method = "nearest",
+  distance = "glm",
+  link = "logit",
+  caliper = 0.2,
+  replace = F
+  )
+
+# visualize covariate balance
+love.plot(
+  x = ps_matching,
+  abs = TRUE, # if absolute values should be plotted
+  thresholds = 0.1, # vertical line with "balance" threshold
+  drop.distance = TRUE, # should the distance measure be removed
+  var.order = "unadjusted", # variable order on y-axis
+  colors = c("blue", "orange"), # first color =  unadjusted sample, second = adjusted sample
+  stars = "std", # to indicate mean differences that have been standardized
+  shapes = 17, # the shape of the SMD geometries
+  size = 4, # the size of the SMD gemotries
+  grid = TRUE,
+  position = "top" # legend position
+  )
+```
+
+### Estimating marginal hazard ratio
+
+```{r}
+# use propensity score matched cohort
+data_matched <- match.data(ps_matching)
+
+library(survival)
+library(gtsummary)
+
+#Cox Regression for marginal HR
+coxph(
+  formula = Surv(eventtime, status) ~ exposure, 
+  data = data_matched, 
+  robust = TRUE, 
+  weights = weights, 
+  cluster = subclass
+  ) |> 
+  tbl_regression(exponentiate = TRUE)
+```
+
+## Appendix
+
+### Repository details
+
+This pre-populated example repository is conceptualized for a typical RWE study with the following sub-directories/-files:
+
+-   `README.md`: Short description and information about the repository as well as mock study.
+
+-   `protocol`: HARPER quarto template (`protocol.qmd`) with empty table shells included in the protocol, template for study design figures and HARPER pdf template. It also contains a pre-configured `references.bib` BibTex file for citations/references one may want to include in the protocol.
+
+-   `documentation`: Sub-directory for documentation materials, e.g. data dictionaries or IRB approval letters.
+
+-   `scripts`: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: *1_data_query.qmd*, *2_descriptives.qmd*, *3_main_analysis.qmd*, *4_senstivity_analysis.qmd*, etc.
+
+-   `functions`: Custom R/Python functions to be sourced in analysis scripts.
+
+-   `results`: Sub-directory for collecting publication-ready tables, figures and other material relevant to communicate results.
+
+-   `public`: output directory for all quarto scripts and resources published on the website. This is particularly useful to publish annotated and interactive outputs along with a peer-reviewed manuscript as a measure of enhanced transparency and reproducibility and a way to augment and support study results. The name of the output directory can be customized in the `_quarto.yml` file according to specific system needs (for more details see the [quarto website](https://quarto.org/docs/projects/quarto-projects.html)).
+
+-   `manuscript`: Sub-directory where manuscript and supplementary material can be drafted and stored.
+
+-   `renv`: Project-specific R package library. Fore more information, please visit the [renv website](https://rstudio.github.io/renv/articles/renv.html).
+
+-   `.gitignore`: File to specify which files should not be tracked via git.
+
+-   `.Rprofile`: Environment file for R projects to store things like paths or keys (you can also setup an `.Renviron`)
+
+-    `.gitlab-ci.yml`: Pre-configured template. The `.gitlab-ci.yml` defines the GitLab continuous integration and deployment (CI/CD). This file may need to be adjusted to your specific project and installed GitLab runner(s).
+
+Of course you can customize and remove/add other files and directories. For example, one may also want to add bash files to orchestrate the execution of different scripts.
+
+## References
