@@ -77,13 +77,13 @@ attrition <- get_attrition(
   
   # labels                               
   criteria_descriptions = c(
-    "Age > 21 years at index date",
-    "No history of smoking"
+    "Age > 21 years at index date"
+    , "No history of smoking"
     ),
   # coded condition
   criteria_conditions   = c(
-    "age_num > 21",
-    "smoking_cat == 0"
+    "age_num > 21"
+    , "smoking_cat == 0"
     ),
   # patient ID column
   subject_column_name   = "patientID"
