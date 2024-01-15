@@ -28,7 +28,7 @@ suppressPackageStartupMessages(library(dplyr))
 # a patient ID, so we artificially create
 # one for this example
 data <- smdi_data_complete |> 
-  mutate(patientID = as.character(paste0("patientID", dplyr::row_number())))
+  mutate(patientID = as.character(paste0("patientID", row_number())))
 
 data |> 
   glimpse()
@@ -120,12 +120,14 @@ love.plot(
 
 ### Estimating marginal hazard ratio
 
+We now estimate the final marginal hazard ratio in the propensity score matched cohort to estimate the treatment effect (see also [here](https://kosukeimai.github.io/MatchIt/articles/estimating-effects.html#survival-outcomes)).
+
 ```{r}
 # use propensity score matched cohort
 data_matched <- match.data(ps_matching)
 
 library(survival)
-library(gtsummary)
+library(broom)
 
 #Cox Regression for marginal HR
 coxph(
@@ -135,7 +137,8 @@ coxph(
   weights = weights, 
   cluster = subclass
   ) |> 
-  tbl_regression(exponentiate = TRUE)
+  tidy(exponentiate = TRUE, conf.int = TRUE) |> 
+  select(term, estimate, robust.se, conf.low, conf.high)
 ```
 
 ## Appendix
