@@ -8,7 +8,9 @@ csl: pharmacoepidemiology-and-drug-safety.csl
 
 ## Background
 
-This repository complements the `Let's git it started` introduction to git for reproducible analytic workflows in real-world evidence (RWE) studies.
+This repository complements the `Let's git it started` introduction to git for reproducible analytic workflows in real-world evidence (RWE) studies.[@weberpals2024]
+
+Weberpals J, Wang SV. The FAIRification of research in real-world evidence: A practical introduction to reproducible analytic workflows using Git and R. Pharmacoepidemiol Drug Saf. Published online January 3, 2024. [doi:10.1002/pds.5740](https://onlinelibrary.wiley.com/doi/10.1002/pds.5740)
 
 [Note]{.underline}: This is an example repository based on the HARPER template [@wang2022harmonized] (available under [gitlab-scm.partners.org/drugepi/harper](https://gitlab-scm.partners.org/drugepi/harper)) that uses a toy example to demonstrate the composition of a potential RWE study repository and how to version-control and track changes.
 
@@ -186,6 +188,8 @@ Of course you can customize and remove/add other files and directories.
 ## Further readings
 
 ## Advanced readings on `Git` and other resources
+
+-   Weberpals J, Wang SV. The FAIRification of research in real-world evidence: A practical introduction to reproducible analytic workflows using Git and R. Pharmacoepidemiol Drug Saf. Published online January 3, 2024. [doi:10.1002/pds.5740](https://onlinelibrary.wiley.com/doi/10.1002/pds.5740)
 
 -   Main `Git` website to download and learn more about `Git:` <https://git-scm.com>
 

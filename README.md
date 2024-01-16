@@ -4,10 +4,16 @@
 
 This repository complements the `Let's git it started` introduction to
 git for reproducible analytic workflows in real-world evidence (RWE)
-studies.
+studies.<sup>1</sup>
+
+Weberpals J, Wang SV. The FAIRification of research in real-world
+evidence: A practical introduction to reproducible analytic workflows
+using Git and R. Pharmacoepidemiol Drug Saf. Published online January 3,
+2024.
+[doi:10.1002/pds.5740](https://onlinelibrary.wiley.com/doi/10.1002/pds.5740)
 
 <u>Note</u>: This is an example repository based on the HARPER
-template<sup>1</sup> (available under
+template<sup>2</sup> (available under
 [gitlab-scm.partners.org/drugepi/harper](https://gitlab-scm.partners.org/drugepi/harper))
 that uses a toy example to demonstrate the composition of a potential
 RWE study repository and how to version-control and track changes.
@@ -17,7 +23,7 @@ RWE study repository and how to version-control and track changes.
 ### Dataset
 
 For this mock study we will use the `smdi_data_complete` dataset that
-comes with the smdi R package.<sup>2</sup>
+comes with the smdi R package.<sup>3</sup>
 
 ### Background
 
@@ -109,7 +115,7 @@ alt="Figure 1: Cohort attrition and final study size." />
 
 ### Propensity score matching
 
-We perform a 1:1 propensity score matching<sup>3</sup>, adjusting for
+We perform a 1:1 propensity score matching<sup>4</sup>, adjusting for
 pre-exposure covariates to control for confounding bias.
 
 ``` r
@@ -243,6 +249,12 @@ Of course you can customize and remove/add other files and directories.
 
 ## Advanced readings on `Git` and other resources
 
+- Weberpals J, Wang SV. The FAIRification of research in real-world
+  evidence: A practical introduction to reproducible analytic workflows
+  using Git and R. Pharmacoepidemiol Drug Saf. Published online January
+  3, 2024.
+  [doi:10.1002/pds.5740](https://onlinelibrary.wiley.com/doi/10.1002/pds.5740)
+
 - Main `Git` website to download and learn more about `Git:`
   <https://git-scm.com>
 
@@ -307,9 +319,20 @@ Of course you can customize and remove/add other files and directories.
 
 <div id="refs" class="references csl-bib-body">
 
-<div id="ref-wang2022harmonized" class="csl-entry">
+<div id="ref-weberpals2024" class="csl-entry">
 
 <span class="csl-left-margin">1.
+</span><span class="csl-right-inline">Weberpals J, Wang SV. The
+FAIRification of research in real-world evidence: A practical
+introduction to reproducible analytic workflows using Git and R.
+*Pharmacoepidemiology and Drug Safety* 2024.
+doi:[10.1002/pds.5740](https://doi.org/10.1002/pds.5740).</span>
+
+</div>
+
+<div id="ref-wang2022harmonized" class="csl-entry">
+
+<span class="csl-left-margin">2.
 </span><span class="csl-right-inline">Wang SV, Pottegård A, Crown W, *et
 al.* HARmonized protocol template to enhance reproducibility of
 hypothesis evaluating real-world evidence studies on treatment effects:
@@ -320,7 +343,7 @@ Health* 2022; **25**: 1663–1672.</span>
 
 <div id="ref-smdi" class="csl-entry">
 
-<span class="csl-left-margin">2.
+<span class="csl-left-margin">3.
 </span><span class="csl-right-inline">Weberpals J. Smdi: Perform
 structural missing data investigations. 2023. Available at:
 <https://janickweberpals.gitlab-pages.partners.org/smdi>.</span>
@@ -329,7 +352,7 @@ structural missing data investigations. 2023. Available at:
 
 <div id="ref-MatchIt" class="csl-entry">
 
-<span class="csl-left-margin">3.
+<span class="csl-left-margin">4.
 </span><span class="csl-right-inline">Ho DE, Imai K, King G, Stuart EA.
 MatchIt: Nonparametric preprocessing for parametric causal inference.
 2011; **42**.
