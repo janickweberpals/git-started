@@ -181,6 +181,6 @@ This pre-populated example repository is conceptualized for a typical RWE study 
 
 -    `.gitlab-ci.yml`: Pre-configured template. The `.gitlab-ci.yml` defines the GitLab continuous integration and deployment (CI/CD). This file may need to be adjusted to your specific project and installed GitLab runner(s).
 
-Of course you can customize and remove/add other files and directories. For example, one may also want to add bash files to orchestrate the execution of different scripts.
+Of course you can customize and remove/add other files and directories.
 
 ## References
