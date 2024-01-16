@@ -163,7 +163,7 @@ This pre-populated example repository is conceptualized for a typical RWE study 
 
 -   `documentation`: Sub-directory for documentation materials, e.g. data dictionaries or IRB approval letters.
 
--   `scripts`: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: *1_data_query.qmd*, *2_descriptives.qmd*, *3_main_analysis.qmd*, *4_senstivity_analysis.qmd*, etc.
+-   `scripts`: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: *1_data_query.qmd*, *2_descriptives.qmd*, *3_main_analysis.qmd*, *4_sensitivity_analysis.qmd*, etc.
 
 -   `functions`: Custom R/Python functions to be sourced in analysis scripts.
 
