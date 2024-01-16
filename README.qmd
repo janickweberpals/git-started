@@ -61,13 +61,11 @@ attrition <- get_attrition(
   criteria_descriptions = c(
     "Age > 21 years at index date"
     , "No history of smoking"
-    , "No EGFR mutation"
     ),
   # coded condition
   criteria_conditions   = c(
     "age_num > 21"
     , "smoking_cat == 0"
-    , "egfr_cat == 0"
     ),
   # patient ID column
   subject_column_name   = "patientID"

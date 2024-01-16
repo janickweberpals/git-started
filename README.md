@@ -79,13 +79,11 @@ attrition <- get_attrition(
   criteria_descriptions = c(
     "Age > 21 years at index date"
     , "No history of smoking"
-    , "No EGFR mutation"
     ),
   # coded condition
   criteria_conditions   = c(
     "age_num > 21"
     , "smoking_cat == 0"
-    , "egfr_cat == 0"
     ),
   # patient ID column
   subject_column_name   = "patientID"
@@ -178,7 +176,7 @@ coxph(
     # A tibble: 1 × 5
       term     estimate robust.se conf.low conf.high
       <chr>       <dbl>     <dbl>    <dbl>     <dbl>
-    1 exposure    0.916    0.0842    0.776      1.08
+    1 exposure    0.826    0.0742    0.714     0.955
 
 ## Appendix
 
