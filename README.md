@@ -6,6 +6,9 @@ This repository complements the `Let's git it started` introduction to
 git for reproducible analytic workflows in real-world evidence (RWE)
 studies.
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-wvdjgSprr2Nf5kQzdFa2dJUaTlj-CpOquM5Hf_BJDBxaN1EhVJqQJ636LYle8J4ZpIiCvPMbYlZo/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="725" height="440.6641" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</iframe>
+
 <u>Note</u>: This is an example repository based on the HARPER
 template<sup>1</sup> (available under
 [gitlab-scm.partners.org/drugepi/harper](https://gitlab-scm.partners.org/drugepi/harper))
@@ -202,7 +205,7 @@ RWE study with the following sub-directories/-files:
 - `scripts`: Sub-directory for R/Python analysis scripts. It is
   recommended to have a clear labeling such as: *1_data_query.qmd*,
   *2_descriptives.qmd*, *3_main_analysis.qmd*,
-  *4_senstivity_analysis.qmd*, etc.
+  *4_sensitivity_analysis.qmd*, etc.
 
 - `functions`: Custom R/Python functions to be sourced in analysis
   scripts.
@@ -238,8 +241,70 @@ RWE study with the following sub-directories/-files:
   GitLab runner(s).
 
 Of course you can customize and remove/add other files and directories.
-For example, one may also want to add bash files to orchestrate the
-execution of different scripts.
+
+## Further readings
+
+## Advanced readings on `Git` and other resources
+
+- Main `Git` website to download and learn more about `Git:`
+  <https://git-scm.com>
+
+- [Pro Git](https://git-scm.com/book/en/v2) by Scott Chacon and Ben
+  Straub.
+
+- Comprehensive guide on the use of Git in combination with R:
+  <https://happygitwithr.com/>
+
+- Cheatsheet on most important `Git` commands:
+  <https://education.github.com/git-cheat-sheet-education.pdf>
+
+- GitHub Desktop App: <https://desktop.github.com/>
+
+- Git manual by *Atlassian* (provider of the `Bitbucket` platform):
+  <https://www.atlassian.com/git>
+
+- Coursera courses:
+
+  - [Introduction to Git and
+    GitHub](https://www.coursera.org/learn/introduction-git-github)
+    (Google)
+
+  - [Version Control with
+    Git](https://www.coursera.org/learn/version-control-with-git)
+    (Atlassian)
+
+  - [Getting Started with Git and
+    GitHub](https://www.coursera.org/learn/getting-started-with-git-and-github)
+    (IBM)
+
+  - [Making Data Science Work for Clinical
+    Reporting](https://www.coursera.org/learn/making-data-science-work-for-clinical-reporting?=)
+    (Genentech)
+
+- Quarto (open-source scientific and technical publishing system for
+  reproducible research): <https://quarto.org>
+
+- Choosing a suitable license for a remote repository: Public
+  repositories need to be licensed to be truly open source. If no
+  license is provided, the work is by default under exclusive copyright.
+  The website <https://choosealicense.com> provides an excellent
+  overview of the different types of licenses.
+
+- Useful Git repositories for observational healthcare research:
+
+  - Division of Pharmacoepidemiology and Pharmacoeconomics:
+    <https://gitlab-scm.partners.org/drugepi>
+
+  - Observational Health Data Sciences and Informatics (OHDSI):
+    <https://github.com/OHDSI>
+
+  - Darwin EU® Private Development Repository:
+    <https://github.com/darwin-eu-dev>
+
+  - Pharmaverse (Network of developers of curated open source R packages
+    for clinical reporting):
+    [https://pharmaverse.org](https://pharmaverse.orghttps://pharmaverse.org)
+    & <https://github.com/pharmaverse/>
 
 ## References
 
