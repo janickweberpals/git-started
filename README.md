@@ -79,16 +79,22 @@ attrition <- get_attrition(
   criteria_descriptions = c(
     "Age > 21 years at index date"
     , "No history of smoking"
+    , "No EGFR mutation"
     ),
   # coded condition
   criteria_conditions   = c(
     "age_num > 21"
     , "smoking_cat == 0"
+    , "egfr_cat == 0"
     ),
   # patient ID column
   subject_column_name   = "patientID"
   
   )
+
+# apply attrition steps: [-1] just removes the first attrition 
+# condition in the table which is "none"
+data_eligible <- apply_attrition(data, attrition$Condition[-1])
 
 visr(
   x = attrition,
@@ -116,7 +122,7 @@ exposure_form <- as.formula("exposure ~ age_num + female_cat + ses_cat")
 # with 0.2 caliper on propensity score
 ps_matching <- matchit(
   formula = exposure_form,
-  data = data,
+  data = data_eligible,
   ratio = 1,
   method = "nearest",
   distance = "glm",
@@ -172,7 +178,7 @@ coxph(
     # A tibble: 1 × 5
       term     estimate robust.se conf.low conf.high
       <chr>       <dbl>     <dbl>    <dbl>     <dbl>
-    1 exposure    0.824    0.0484    0.750     0.906
+    1 exposure    0.916    0.0842    0.776      1.08
 
 ## Appendix
 

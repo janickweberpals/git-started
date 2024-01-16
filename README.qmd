@@ -74,6 +74,10 @@ attrition <- get_attrition(
   
   )
 
+# apply attrition steps: [-1] just removes the first attrition 
+# condition in the table which is "none"
+data_eligible <- apply_attrition(data, attrition$Condition[-1])
+
 visr(
   x = attrition,
   description_column_name = "Criteria", 
@@ -99,7 +103,7 @@ exposure_form <- as.formula("exposure ~ age_num + female_cat + ses_cat")
 # with 0.2 caliper on propensity score
 ps_matching <- matchit(
   formula = exposure_form,
-  data = data,
+  data = data_eligible,
   ratio = 1,
   method = "nearest",
   distance = "glm",
