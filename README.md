@@ -6,9 +6,6 @@ This repository complements the `Let's git it started` introduction to
 git for reproducible analytic workflows in real-world evidence (RWE)
 studies.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-wvdjgSprr2Nf5kQzdFa2dJUaTlj-CpOquM5Hf_BJDBxaN1EhVJqQJ636LYle8J4ZpIiCvPMbYlZo/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="725" height="440.6641" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-</iframe>
-
 <u>Note</u>: This is an example repository based on the HARPER
 template<sup>1</sup> (available under
 [gitlab-scm.partners.org/drugepi/harper](https://gitlab-scm.partners.org/drugepi/harper))
@@ -69,7 +66,7 @@ i.e.,
 
 2.  No history of smoking (`smoking_cat == 0`)
 
-3.  PD-L1 biomarker expression \> 50% (`pdl1_num > 50`)
+Add a third condition, which is no evidence of an EGFR gene mutation.
 
 ``` r
 library(visR)
